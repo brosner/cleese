@@ -19,8 +19,10 @@ unsigned char x[] = {
 	0,0,115,0,0,0,0,
 };
 
+#define SIZE (int) sizeof(x)
+
 static struct _frozen frozenModules[] = {
-        {"__main__", x, 135}, 
+        {"__main__", x, SIZE},
 	{0, 0, 0} /* sentinel */
 };
 
